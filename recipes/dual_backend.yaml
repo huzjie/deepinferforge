@@ -1,0 +1,13 @@
+# 双后端部署配方：同一模型，NVIDIA 与昇腾各一份编译计划
+backend:
+  default_backend: nvidia
+  targets: [nvidia, ascend]
+model:
+  dim: 32
+  n_layers: 4
+  n_heads: 4
+  head_dim: 8
+  vocab: 128
+  use_moe: true
+  n_experts: 8
+  top_k: 2

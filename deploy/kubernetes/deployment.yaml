@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deepinferforge
+  labels:
+    app: deepinferforge
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: deepinferforge
+  template:
+    metadata:
+      labels:
+        app: deepinferforge
+    spec:
+      containers:
+        - name: deepinferforge
+          image: deepinferforge:1.0.0
+          ports:
+            - containerPort: 8421
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8421
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8421

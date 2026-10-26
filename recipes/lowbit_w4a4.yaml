@@ -1,0 +1,5 @@
+# 低比特配方：W4A4 分组量化，压内存
+quant:
+  scheme: w4a4
+  group_size: 64
+  symmetric: true

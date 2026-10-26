@@ -1,0 +1,6 @@
+apiVersion: v2
+name: deepinferforge
+description: A unified cross-platform inference compiler & runtime
+type: application
+version: 1.0.0
+appVersion: "1.0.0"

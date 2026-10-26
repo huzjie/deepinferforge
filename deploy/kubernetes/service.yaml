@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: deepinferforge
+spec:
+  selector:
+    app: deepinferforge
+  ports:
+    - port: 8421
+      targetPort: 8421
+  type: ClusterIP

@@ -1,0 +1,7 @@
+# 激进融合配方：全量开启图优化
+passes:
+  fusion: true
+  constfold: true
+  dce: true
+  memory_plan: true
+  canonicalize: true

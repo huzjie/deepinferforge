@@ -1,0 +1,5 @@
+# 投机解码配方：长草稿 + 低成本草稿模型
+speculative:
+  draft_len: 6
+  cost_ratio: 0.1
+  acceptance_base: 0.3

@@ -1,0 +1,13 @@
+# Low-bit profile: W4A4 group-wise quantization for memory-constrained edges
+quant:
+  scheme: w4a4
+  group_size: 64
+  symmetric: true
+declared:
+  project: DeepInfer
+  vendor: DeepSeek
+  announcement: 2026-10-26
+  dual_target: NVIDIA (CUDA) + Huawei Ascend (CANN)
+  model_params_b: 671.0
+  model_active_b: 37.0
+  license: open source

@@ -1,0 +1,6 @@
+# 异构分层配方：80% 热算子常驻 HBM
+scheduler:
+  hbm_bytes: 1073741824
+  host_bytes: 8589934592
+  hot_fraction: 0.8
+  prefetch_depth: 2

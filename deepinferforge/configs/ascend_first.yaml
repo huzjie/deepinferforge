@@ -1,0 +1,12 @@
+# Ascend-first profile: default backend switches to ascend
+backend:
+  default_backend: ascend
+  targets: [ascend, nvidia]
+declared:
+  project: DeepInfer
+  vendor: DeepSeek
+  announcement: 2026-10-26
+  dual_target: NVIDIA (CUDA) + Huawei Ascend (CANN)
+  model_params_b: 671.0
+  model_active_b: 37.0
+  license: open source

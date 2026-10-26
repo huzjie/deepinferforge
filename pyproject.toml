@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepinferforge"
+version = "1.0.0"
+description = "A unified cross-platform inference compiler & runtime (DeepInfer-style): one IR, NVIDIA + Ascend backends."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "Apache-2.0" }
+authors = [{ name = "deepinferforge contributors" }]
+keywords = [
+    "inference", "compiler", "IR", "CUDA", "Ascend", "CANN", "quantization",
+    "speculative-decoding", "kv-cache", "zero-dependency",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/huzjie/deepinferforge"
+
+[tool.setuptools]
+packages = ["deepinferforge"]
